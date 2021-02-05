@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <style>
+        div {
+            color: black;
+            font-size: 2rem
+        }
+
         div > div {
             margin-left: .5rem;
             padding-left: .25rem;
@@ -13,11 +18,11 @@
     <script defer src="Dom-traversal.js"></script>
 </head>
 <body>
-<div id="grand-parent">
+<div id="grand-parent" class="grand-parent-class">
     GrandParent
     <div>
         Parent 1
-        <div> Child 1</div>
+        <div id="child-one"> Child 1</div>
         <div> Child 2</div>
     </div>
     <div>Parent 2</div>
