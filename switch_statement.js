@@ -60,3 +60,16 @@ while (currentPerson != null)
     console.log(currentPerson.name)
     currentPerson = currentPerson.friend
 }
+
+function printNumber(number)
+{
+    if (number > 5)
+    {
+        return
+    }
+    console.log(number)
+    printNumber(number + 1)
+    console.log('Exiting function N' + number)
+}
+
+printNumber(1)
